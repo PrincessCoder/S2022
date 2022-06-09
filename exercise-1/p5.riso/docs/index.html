@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="p5.Riso">
+  <meta name="twitter:description" content="p5.Riso.js is a p5.js library for Risograph printing">
+  <meta name="twitter:image" content="https://antiboredom.github.io/p5.riso/assets/share.jpg">
+  <meta property="og:title" content="p5.Riso" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://antiboredom.github.io/p5.riso" />
+  <meta property="og:image" content="https://antiboredom.github.io/p5.riso/assets/share.jpg">
+  <meta property="og:description" content="p5.Riso.js is a p5.js library for Risograph printing" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>p5.riso</title>
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav-wrapper">
+    <ul>
+      <li><a href="#get" id="C">Get Started</a></li>
+      <li><a href="#ex" id="Y">Examples</a></li>
+      <li><a href="#ref" id="M">Reference</a></li>
+      <li><a href="https://raw.githubusercontent.com/antiboredom/p5.riso/master/lib/p5.riso.js" id="K">Download</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <img id="icon" src="assets/p5.Riso.gif">
+  </div>
+
+
+  <div id="CMYK">
+
+    <div id="get">
+      <p id="title_start">Get Started</p>
+      <div class="text1">
+        <h3>What & Why</h3>
+        <p>p5.Riso.js is a p5.js library for generating files suitable for Risograph printing. It helps turn your sketches into multi-color prints.</p>
+          <p>A <a href="https://en.wikipedia.org/wiki/Risograph">Risograph</a> is sort of like a photocopier combined with a screen printer. Just like in screen printing, it prints one color at a time, each as a separate layer. To prepare digital files for riso printing, images need to be separated into individual colors, each saved out as a file. The p5.Riso Library helps automate color separation and lets you preview of how your prints will look. It makes it possible to turn your interactive p5 sketches into print art!
+        </p>
+        <p><a href = "https://p5js.org/">p5.js</a> itself is a beginner-friendly JavaScript library for creative coding. It's based on the metaphor of a sketch, with the browser page being your whole canvas. If you're already familiar with the riso process, you can use p5.riso to preview how your prints might turn out.</p>
+        <p>Full source and examples on <a href="https://github.com/antiboredom/p5.riso">GitHub</a>.</p>
+        <h3>Installation</h3>
+        <h4>Local</h4>
+        <ul>
+          <li>Download the <a href="https://raw.githubusercontent.com/antiboredom/p5.riso/master/lib/p5.riso.js">p5.riso.js library file</a> and save it to your sketch folder. Add the path to the library file inside the 'head' tags of your index.html file:</li>
+          <code>&lt;script src="p5.riso.js"&gt;&lt;/script&gt;</code>
+        </ul>
+        <h4>OpenProcessing</h4>
+        <ul>
+          <li>Create a new tab by clicking the '+' button next to the mySketch tab. Copy & paste the code from the p5.riso.js file straight into your new tab. You can also fork one of our sample sketches (made on OpenProcessing) and work from there!</li>
+        </ul>
+        <h4>p5.js Web Editor</button>
+        </h4>
+        <ul>
+          <li>Click the grey '>' button under the pink play button on the top left to open the file console. Add a new file to your sketch by clicking the '▼' button. We suggest calling it p5.riso.js. Copy & paste the code from the p5.riso.js file into your new file. Then, click on the index.html file on the sidebar. Add the line of code below under the 'head':</li>
+          <code>&lt;script src="p5.riso.js"&gt;&lt;/script&gt;</code>
+        </ul>
+
+      <h3>Tutorials</h3>
+
+      <ul>
+          <li>
+
+    <a href="https://github.com/antiboredom/p5.riso/blob/master/tutorials/getting-started.md">Getting Started tutorial</a>
+
+  </li>
+  <li>
+
+    <a href="https://github.com/antiboredom/p5.riso/blob/master/tutorials/color-separation.md">Color separation</a>
+
+  </li>
+</ul>
+</div>
+      </div>
+
+    </div>
+
+    <div id="ex">
+      <p id="title_ex">Examples</p>
+      <div class="ml">
+        <p>Click to see the source code.</p>
+
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Cutout">
+            <img src="assets/cutout.jpg">
+          </a>
+        </div>
+
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Image_And_Text">
+            <img src="assets/claire.gif">
+          </a>
+        </div>
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Smudge">
+            <img src="assets/smudge1.jpg">
+          </a>
+        </div>
+
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Capture">
+            <img src="assets/capture.jpg">
+          </a>
+        </div>
+
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Dither">
+            <img src="assets/dither1.jpg">
+          </a>
+        </div>
+
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Dither">
+            <img src="assets/dither2.jpg">
+          </a>
+        </div>
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Color_test">
+            <img src="assets/3-color.gif">
+          </a>
+        </div>
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Dither-test">
+            <img src="assets/dither-test.jpg">
+          </a>
+        </div>
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Halftone">
+            <img src="assets/halftone.png">
+          </a>
+        </div>
+
+        <div class="riso-example">
+          <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/CMYK-Compression">
+            <img src="assets/cmyk_compression_sloan.jpg">
+          </a>
+          <p>Example and print by Robin Sloan</p>
+        </div>
+
+        <p>See <a href="https://github.com/antiboredom/p5.riso/blob/master/additional_examples.md">additional examples here</a>. Let us know if you make prints with p5.riso and we will add your work to the gallery.</p>
+
+        <!-- FIRST ROW -->
+        <!-- <div> -->
+        <!--   <div class="container"> -->
+        <!--     <img src="assets/layers.png" alt="" class="image"> -->
+        <!--     <a href="https://www.openprocessing.org/sketch/742671"> -->
+        <!--       <div class="overlay overlayFade"> -->
+        <!--         <div class="text">Basic Layering</div> -->
+        <!--       </div> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="container"> -->
+        <!--     <img src="assets/cutout.png" alt="" class="image"> -->
+        <!--     <a href="https://www.openprocessing.org/sketch/735487"> -->
+        <!--       <div class="overlay overlayFade"> -->
+        <!--         <div class="text">Cutout</div> -->
+        <!--       </div> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="container"> -->
+        <!--     <img src="assets/marilyn.png" alt="" class="image"> -->
+        <!--     <a href="https://www.openprocessing.org/sketch/735496"> -->
+        <!--       <div class="overlay overlayFade"> -->
+        <!--         <div class="text">Cutout Text</div> -->
+        <!--       </div> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!--  -->
+        <!-- <!&#45;&#45; SECOND ROW &#45;&#45;> -->
+        <!-- <div> -->
+        <!--   <div class="container"> -->
+        <!--     <img src="assets/pattern.png" alt="" class="image"> -->
+        <!--     <a href="https://www.openprocessing.org/sketch/736204"> -->
+        <!--       <div class="overlay overlayFade"> -->
+        <!--         <div class="text">Patterns</div> -->
+        <!--       </div> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!--   <div class="container"> -->
+        <!--     <img src="assets/lindenmayer.png" alt="" class="image"> -->
+        <!--     <a href="https://www.openprocessing.org/sketch/736394"> -->
+        <!--       <div class="overlay overlayFade"> -->
+        <!--         <div class="text">Lindernmayer</div> -->
+        <!--       </div> -->
+        <!--   </div> -->
+        <!--   <div class="container"> -->
+        <!--     <img src="assets/videoCap.png" alt="" class="image"> -->
+        <!--     <a href="https://www.openprocessing.org/sketch/736456"> -->
+        <!--       <div class="overlay overlayFade"> -->
+        <!--         <div class="text">Video Capture</div> -->
+        <!--       </div> -->
+        <!--     </a> -->
+        <!--   </div> -->
+        <!-- </div> -->
+
+      </div>
+    </div>
+
+    <div id="ref">
+      <p id="title_ref">Reference</p>
+      <div class="text2" id="ref_table">
+        <div><a href="#riso">new Riso()</a></div>
+        <div><a href="#fill">Riso.fill()</a></div>
+        <div><a href="#stroke">Riso.stroke()</a></div>
+        <div><a href="#nofill">risoNoFill()</a></div>
+        <div><a href="#nostroke">risoNoStroke()</a></div>
+        <div><a href="#clearRiso">clearRiso()</a></div>
+        <div><a href="#image">Riso.image()</a></div>
+        <div><a href="#cutout">Riso.cutout()</a></div>
+        <div><a href="#channel">extractRGBChannel()</a></div>
+        <div><a href="#channelCMYK">extractCMYKChannel()</a></div>
+        <div><a href="#dither">ditherImage()</a></div>
+        <div><a href="#drawRiso">drawRiso()</a></div>
+        <div><a href="#expRiso">exportRiso()</a></div>
+        <div><a href="#halftoneImage">halftoneImage()</a></div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="description" id="riso">
+        <h3>new Riso(color, width, height)</h3>
+        <p>The base Riso object is a <b>single-color p5 graphics object</b>. Its constructor can take 3 parameters:</p>
+        <ul>
+          <li><b>color:</b> a string set to a Risograph color like "brightred", "blue" or "orange", or an array with [r,g,b] values</li>
+          <li><b>width:</b> the width of the riso canvas (optional - defaults to width of sketch)</li>
+          <li><b>height:</b> the height of the riso canvas (optional - defaults to height of sketch)</li>
+        </ul>
+
+        <p>Internally, the riso object extends p5's built in <a href="https://p5js.org/reference/#/p5/createGraphics">graphics object</a>. You use it mostly the same way with a few exceptions, as detailed in this documentation.</p>
+
+        <pre><code class="language-javascript">
+          let blueChannel; //declare riso object
+
+          function setup(){
+            createCanvas(500, 500);
+            blueChannel = new Riso("blue"); // instantiate riso object as blue layer
+            blueChannel.fill(128); //set opacity
+            blueChannel.rect(20, 20, 100, 100); //draw rect to blue layer
+            drawRiso(); //draw to screen
+          }
+        </code></pre>
+
+        <p>Here we create a blue color layer, set its fill to be 128 (or half opacity) and then draw a rectangle in it.</p>
+        <p>Pay attention to the order that you create each Riso object (each color layer). The drawRiso() function that previews your sketch will display the layers in the order they are created, with the last created layer on top.  Note that if your top layer has an opacity of 255, you may not be able to see the layers underneath. Different color combination may result in different blended colors.</p>
+
+        <p>The following default colors are available: <span id="all-colors"></span></p>
+      </div>
+
+      <div class="description" id="fill">
+        <h3>Riso.fill(value);</h3>
+        <p>The fill method for Riso objects takes a single number value between 0 and 255. 0 is completely transparent, and 255 is completely opaque.</p>
+
+        <pre><code class="language-javascript">
+          function setup(){
+            createCanvas(500, 500);
+            let blueChannel = new Riso("blue"); //create riso object, set to blue
+
+            blueChannel.fill(255); // completely opaque
+            blueChannel.ellipse(0, 0, 100, 100); //draw ellipse on blue layer
+
+            blueChannel.fill(50); // fairly transparent
+            blueChannel.ellipse(50, 50, 100, 100);
+
+            blueChannel.fill(3); // almost invisible
+            blueChannel.ellipse(75, 75, 100, 100);
+
+            drawRiso();
+          }
+        </code></pre>
+
+      </div>
+
+      <div class="description" id="stroke">
+        <h3>Riso.stroke(value);</h3>
+        <p>Just like fill, the stroke method for Riso objects takes a single number value between 0 and 255.</p>
+        <pre><code class="language-javascript">
+          function setup(){
+            createCanvas(500, 500);
+
+            let orange = new Riso("orange");
+            orange.stroke(255);
+            orange.strokeWeight(5);
+            orange.rect(50, 50, 100, 100);
+            drawRiso();
+          }
+        </code></pre>
+      </div>
+
+      <div class="description" id="nofill">
+        <h3>risoNoFill();</h3>
+        <p>Convenience function that calls noFill() on all riso layers.</p>
+        <pre><code class="language-javascript">risoNoFill();</code></pre>
+      </div>
+
+      <div class="description" id="nostroke">
+        <h3>risoNoStroke();</h3>
+        <p>Convenience function that calls noStroke() on all riso layers.</p>
+        <pre><code class="language-javascript">risoNoStroke();</code></pre>
+      </div>
+
+      <div class="description" id="clearRiso">
+        <h3>clearRiso();</h3>
+        <p>Completely clears all riso layers. Useful if you are drawing to riso layers in the draw loop rather than just in setup.</p>
+        <pre><code class="language-javascript">clearRiso();</code></pre>
+      </div>
+
+      <div class="description" id="image">
+        <h3>Riso.image(img, x, y, width, height);</h3>
+        <p>Draws an image onto a riso layer. Acts just like p5's image function, but converts the image to greyscale. It will then print in the color of the layer it is drawn on. Use fill to set the opacity of the image.</p>
+        <ul>
+          <li><b>img:</b> a p5 image, video or graphics object</li>
+          <li><b>x:</b> x-coordinate of image</li>
+          <li><b>y:</b> y-coordinate of image</li>
+          <li><b>width:</b> width of image (optional)</li>
+          <li><b>height:</b> height of image (optional)</li>
+        </ul>
+
+        <pre><code class="language-javascript">
+          let img;
+
+          function preload() {
+            img = loadImage("cat.jpg");
+          }
+
+          function setup(){
+            createCanvas(500, 500);
+
+            let orange = new Riso("orange");
+            orange.fill(200);
+            orange.image(img, 0, 0);
+            drawRiso();
+          }
+        </code></pre>
+      </div>
+
+
+      <div class="description" id="cutout">
+        <h3>Riso.cutout(p5.Graphic);</h3>
+        <p>This function is the inversion of <a href="https://p5js.org/reference/#/p5.Image/mask">the mask function</a>. It removes (or masks) portions of one layer that overlap with another layer or graphics object. This is useful for printing in layers when you don't want overlapping colors.</p>
+
+        <pre><code class="language-javascript">
+          function setup(){
+            createCanvas(500, 500);
+
+            let blue = new Riso("blue"); //blue layer
+            let red = new Riso("red"); //red layer
+
+            blue.ellipse(0, 0, 100, 100);
+            red.ellipse(0, 0, 150, 150);
+
+            //completely removes any intersection of red and blue
+            //layers from the blue layer
+            blue.cutout(red);
+            drawRiso();
+          }
+        </code></pre>
+      </div>
+
+      <div class="description" id="channel">
+        <h3>extractRGBChannel(img, channel);</h3>
+        <p>Extracts a red, blue or green color channels from an image, and saves as a new image. Takes in two parameters:</p>
+        <ul>
+          <li><b>img:</b> a p5 image object</li>
+          <li><b>channel:</b> the channel to extract. Can either be a channel name ("red", "green", or "blue") or number (0, 1, 2) </li>
+        </ul>
+
+        <pre><code class="language-javascript">
+          // convert a color image into a red and blue print
+          let img;
+
+          function preload() {
+            img = loadImage('cat.jpg')
+          }
+
+          function setup(){
+            createCanvas(500, 500);
+
+            let blue = new Riso("blue");
+            let red = new Riso("red");
+
+            let justBlues = extractRGBChannel(img, "blue"); //extract blue from img and save as new image
+            let justReds = extractRGBChannel(img, "red"); //extract red from img and save as new image
+
+            blue.image(justBlues, 0, 0); //draw justblues to blue layer
+            red.image(justReds, 0, 0); //draw justred to red layer
+
+            drawRiso();
+          }
+        </code></pre>
+      </div>
+
+       <div class="description" id="channelCMYK">
+        <h3>extractCMYKChannel(img, channel);</h3>
+        <p>Extracts the cyan, magneta, yellow and/or black color channels from an image, and saves as a new image. Takes in two parameters:</p>
+        <ul>
+          <li><b>img:</b> a p5 image object</li>
+          <li><b>channel:</b> the channel(s) to extract. Can either be a channel name ("cyan", "magenta", "yellow", "black") or number (0, 1, 2, 3) or channel set string ("cy", "mk", "cyk")</li>
+        </ul>
+
+        <pre><code class="language-javascript">
+          // convert a color image into a cyan and magenta print
+          let img;
+
+          function preload() {
+            img = loadImage('cat.jpg')
+          }
+
+          function setup(){
+            createCanvas(500, 500);
+
+            let blue = new Riso("blue");
+            let red = new Riso("red");
+
+            let justCyan = extractCMYKChannel(img, "cyan"); //extract cyan from img
+            let justMagenta = extractCMYKChannel(img, "magenta"); //extract magenta from img
+
+            blue.image(justCyan, 0, 0); //draw justCyan to blue layer
+            red.image(justMagenta, 0, 0); //draw justMagenta to red layer
+
+            drawRiso();
+          }
+        </code></pre>
+      </div>
+      <div class="description" id="dither">
+              <h3>ditherImage(img, type, threshold);</h3>
+              <p>Reduces an image to one color using patterns of dots to create greys.</p>
+              <p>Takes three parameters. The first is the image object. The second is the dither type (choose between atkinson, floydsteinberg, bayer or none). The third sets the threshold (it only applies to bayer and none). Dither type 'none' simply applies a threshold, turning pixels above and below the threshold clear and black.</p>
+
+              <pre><code class="language-javascript">
+              let black;
+              let img;
+              let ditherType = 'atkinson';
+
+              function preload() {
+                img = loadImage('data/no_threat.jpg');
+              }
+
+              function setup() {
+                pixelDensity(1);
+                createCanvas(img.width, img.height);
+                black = new Riso('black'); //create black layer
+              }
+
+              function draw() {
+                background(220);
+                let threshold = map(mouseX, 0, width, 0, 255); //change dither threshold with mouse position
+                clearRiso();
+
+                let dithered = ditherImage(img, ditherType, threshold);//pass image to dither
+                black.image(dithered, 0, 0); //draw dithered image
+
+                drawRiso();
+              }
+
+              function keyReleased() { //function to change dither type with a keypress
+                if (key == 1) ditherType = 'atkinson';
+                else if (key == 2) ditherType = 'floydsteinberg';
+                else if (key == 3) ditherType = 'bayer';
+                else if (key == 4) ditherType = 'none';
+              }
+
+              </code></pre>
+            </div>
+      <div class="description" id="drawRiso">
+        <h3>drawRiso();</h3>
+        <p>Draws all Riso objects/layers to the screen. Should be used at the end of your draw or setup functions. Useful for previewing what your prints will look like.</p>
+
+        <pre><code class="language-javascript">
+          function setup(){
+            createCanvas(500, 500);
+
+            let colors = ["red", "blue", "green", "black"];
+            for (let i = 0; i < colors.length; i++) {
+              let channel = new Riso(colors[i]); //create four color channels from array
+              channel.fill(random(100, 200));
+              channel.ellipse(random(0, width), random(0, height), 100, 100); //put a random ellipse on each
+            }
+
+            drawRiso(); //preview on screen
+          }
+        </code></pre>
+      </div>
+
+      <div class="description" id="expRiso">
+        <h3>exportRiso();</h3>
+        <p>Use this function when you are ready to print. It exports all riso layers as individual png files, that can be printed in different ink colors. You should call this function in an event listener like mousePressed, or at the end of your setup function.</p>
+
+        <pre><code class="language-javascript">
+          let blue;
+          let red;
+
+          function setup(){
+            createCanvas(500, 500);
+
+            blue = new Riso("blue");
+            red = new Riso("red");
+          }
+
+          function draw() {
+            clearRiso(); //clear screen every loop of draw
+
+            blue.fill(map(mouseX, 0, width, 0, 255)); //set blue fill by mouse position
+            red.fill(map(mouseY, 0, height, 0, 255)); //set red fill by mouse position
+
+            blue.ellipse(200, 200, 100, 100); //draw ellipse to blue layer
+            red.ellipse(250, 250, 100, 100); //draw ellipse to red layer
+          }
+
+          function mousePressed() { //when mouse is pressed
+            exportRiso(); //export red and blue layers as pngs for printing
+          }
+        </code></pre>
+      </div>
+
+    <div class="description" id="halftoneImage">
+      <h3>halftoneImage();</h3>
+      <p>Applies a halftone pattern to an image.
+
+      Takes up to five parameters. The first and only required parameter is the image object. The second is the shape of the dots (default value is a circle). The third is the frequency of dots, measured in lpi (lines per inch), with a default value of 10. The fourth one is the angle to rotate overlapping patterns to reduce interference (default value 45). The fifth parameter is intensity, which will dither the result at the given threshold (default value 127).</p>
+
+        <pre><code class="language-javascript">
+              let pink;
+              let img;
+
+              function preload() {
+                img = loadImage('data/monkeys.jpg');
+              }
+
+              function setup() {
+                pixelDensity(1);
+                createCanvas(img.width, img.height);
+                pink = new Riso('fluorescentpink'); // create pink layer
+              }
+
+              function draw() {
+                background(220);
+                clearRiso();
+
+                let halftoned = halftoneImage(img, 'line', 3, 45, 90); // pass image to halftone with line dots, frequency of 3, angle of 45, and intensity of 90.
+                pink.image(halftoned, 0, 0); // draw halftoned image
+
+                drawRiso();
+              }
+        </code></pre>
+    </div>
+
+    </div>
+    <div id="Troubleshooting">
+      <p id="title_trouble">Troubleshooting</p>
+      <div class="text1">
+        <h3>Getting started</h3>
+        <p>This library will only work with the latest version of the p5.js library (release 0.9.0 onwards).</p>
+        <h3>Images don't show up</h3>
+        <p>Running riso.p5 locally requires you to run a <a href="https://github.com/processing/p5.js/wiki/Local-server">local web server</a> to work with image files. If you try to locally run any of the examples with images (such as <a href="https://github.com/antiboredom/p5.riso/tree/master/examples/Dither">Dither</a>), it will show the Loading... screen forever. Many text editors (like Sublime Text, Brackets, and VS Code) have plugins to run a server. You can also use a browser app like <a href ="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/">Web Server for Chrome</a>. A third option is to use the <a href="https://editor.p5js.org">p5.js web editor</a>, which will let you upload image files if you log in.</p>
+        <h3>Image sizes</h3> 
+        <p>Set the pixel density of your sketches to 1, using the <a href="https://p5js.org/reference/#/p5/pixelDensity">pixelDensity function</a> in setup(). Else p5.riso will export your images at the default pixel density of your screen (for retina screens, this results in images coming out twice as large as what is set in CreateCanvas). With a pixel density of 1, the exported images will be sized with resolution of 72 dpi. Therefore an image of 600 pixels, will come out to be 600/72 = 8.3 inches wide. If you want to print your image at a higher resolution but smaller physical size, eg. at a dpi of 300, then you need to resize it using photoshop or a <a href="https://convert.town/image-dpi">tool like this one.</a></p>
+      </div>
+    </div>
+      
+      
+    <div id="credits">
+      <p id="title_credits">Credits</p>
+      <div class="text1">
+        <p>p5.Riso was created by <a href="http://lav.io/">Sam Lavigne</a> and <a href="http://tegabrain.com/">Tega Brain</a> with web design and contributions from <a href="https://github.com/CRYSTALMINYICHEN">Crystal Chen</a> and <a href="https://paollabd.github.io/">Paolla Bruno Dutra.</a> Made with the support of the <a href="http://idm.engineering.nyu.edu/">Integrated Digital Media Program,</a> NYU. Thanks for getting the printer :)</p>
+        <p>Full source and examples on Github: <a href="https://github.com/antiboredom/p5.riso">https://github.com/antiboredom/p5.riso</a></p>
+      </div>
+    </div>
+  </div>
+  <script rel="scriptsheet" src="script.js"></script>
+  <script src="prism.js"></script>
+</body>
+
+</html>

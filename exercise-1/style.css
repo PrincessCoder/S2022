@@ -1,0 +1,9 @@
+html, body {
+    margin: 1em;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  canvas {
+    display: block;
+  }
+  
