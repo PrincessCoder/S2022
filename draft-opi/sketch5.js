@@ -2,7 +2,7 @@ let blue, red;
 let img;
 
 function preload() {
-  img = loadImage('assets/Geo1.png');
+  img = loadImage('assets/Geo8.png');
 }
 
 function setup() {
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(240);
 
   clearRiso();
 
@@ -34,7 +34,7 @@ function draw() {
   textGraphic.textFont('Helvetica');
   textGraphic.textAlign(CENTER, CENTER);
   textGraphic.textSize(80);
-  textGraphic.text('ABOLISH', width * 0.5, height * 0.7);
+  textGraphic.text('GROOVY', width * 2, height * 2);
 
   blue.cutout(textGraphic);
 
