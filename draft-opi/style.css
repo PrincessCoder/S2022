@@ -6,6 +6,7 @@ html, body {
     margin: 1em;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #eee;
   }
   canvas {
     display: block;

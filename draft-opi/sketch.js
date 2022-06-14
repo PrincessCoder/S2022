@@ -1,38 +1,46 @@
-let pink;
+let blue, red;
 let img;
 
 function preload() {
-  img = loadImage('/assets/Geo1.png');
+  img = loadImage('../assets/Geo1.png');
 }
 
 function setup() {
   pixelDensity(1);
-  createCanvas(img.width, img.height);
-
-  pink = new Riso('fluorescentpink');
+  createCanvas(8.5 * 72, 11 * 72);
+  blue = new Riso('blue');
+  red = new Riso('red');
+  noLoop();
 }
 
 function draw() {
   background(255);
+
   clearRiso();
 
-  let halftoned = halftoneImage(img, 'line', 3, 45, 90);
+  let reds = extractRGBChannel(img, "red");
+  let blues = extractRGBChannel(img, "blue");
 
-  pink.image(halftoned, 0, 0);
+  blue.imageMode(CENTER);
+  red.imageMode(CENTER);
+
+  blue.image(blues, width / 2, height / 2, img.width / 2, img.height / 2);
+  red.image(reds, width / 2, height / 2, img.width / 2, img.height / 2);
+
+
+  let textGraphic = createGraphics(width, height);
+  textGraphic.fill(0);
+  textGraphic.textStyle(BOLD);
+  textGraphic.textFont('Helvetica');
+  textGraphic.textAlign(CENTER, CENTER);
+  textGraphic.textSize(80);
+  textGraphic.text('ABOLISH', width * 0.5, height * 0.7);
+
+  blue.cutout(textGraphic);
 
   drawRiso();
 }
 
-let button;
-function setup() {
-  createCanvas(100, 100);
-  background(0);
-  button = createButton('click me');
-  button.position(0, 0);
-  button.mousePressed(changeBG);
-}
-
-function changeBG() {
-  let val = random(255);
-  background(val);
+function mousePressed() {
+  exportRiso();
 }
