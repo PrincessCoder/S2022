@@ -2,7 +2,7 @@ let blue, red;
 let img;
 
 function preload() {
-  img = loadImage('assets/Geo8.png');
+  img = loadImage('assets/Geo7.png');
 }
 
 function setup() {
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(240);
+  background(255);
 
   clearRiso();
 
@@ -33,8 +33,8 @@ function draw() {
   textGraphic.textStyle(BOLD);
   textGraphic.textFont('Helvetica');
   textGraphic.textAlign(CENTER, CENTER);
-  textGraphic.textSize(80);
-  textGraphic.text('GROOVY', width * 2, height * 2);
+  textGraphic.textSize(800);
+  textGraphic.text('ok', width * 0.5, height * 0.7);
 
   blue.cutout(textGraphic);
 
