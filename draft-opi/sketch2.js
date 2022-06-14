@@ -22,9 +22,8 @@ function draw() {
   pink.image(halftoned, 0, 0);
 
   drawRiso();
+}
 
-  function mousePressed() {
-    exportRiso();
-  }
-
+function mousePressed() {
+  exportRiso();
 }
