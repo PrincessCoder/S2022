@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(240);
 
   clearRiso();
 
@@ -22,4 +22,5 @@ function draw() {
   pink.image(halftoned, 0, 0);
 
   drawRiso();
+
 }
