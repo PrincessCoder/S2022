@@ -33,7 +33,7 @@ function draw() {
   textGraphic.textStyle(BOLD);
   textGraphic.textFont('Helvetica');
   textGraphic.textAlign(CENTER, CENTER);
-  textGraphic.textSize(80);
+  textGraphic.textSize(800);
   textGraphic.text('GROOVY', width * 2, height * 2);
 
   blue.cutout(textGraphic);
