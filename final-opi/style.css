@@ -25,9 +25,7 @@ html, body {
   }
   .w3-hover-blue:hover{
     color: #fff;
-    background-color: #1d5482;
-    border: 0px;
-    padding: .5em;
+    background-color: rgb(3, 183, 3);
   }
   .w3-btn, .w3-button, .w3-hover-blue {
     border: none;
