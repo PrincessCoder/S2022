@@ -3,8 +3,9 @@
 }
 
 html, body {
-    max-width: 600px;
-    margin: auto;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 32px;
     font-family: 'Poppins', sans-serif;
     background-color: #eee;
     font-size: small;
