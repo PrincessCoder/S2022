@@ -1,10 +1,13 @@
 let blue, red, green;
-let imgs = [];
+let img;
 
 function preload() {
-    for (var i = 0; i < 7; i++) {
-        imgs[i] = loadImage("assets/IMG_" + i + ".png");
-    }
+  img = loadImage('assets/img_1.png');
+
+    // red = loadImage('assets/Geo1.png');
+    // blue = loadImage('assets/Geo2.png');
+    // green = loadImage('assets/Geo3.png');
+
 }
 
 function setup() {
@@ -13,7 +16,7 @@ function setup() {
   blue = new Riso('mint');
   red = new Riso('lightlime');
   green = new Riso('fluorescentpink');
-   noLoop();
+//    noLoop();
 }
 
 function draw() {
