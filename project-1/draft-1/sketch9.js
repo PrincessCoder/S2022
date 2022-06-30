@@ -1,7 +1,7 @@
 let blue, red, green;
 let img;
 
-function preload() {
+ preload(); {
   img = loadImage('assets/img_1.png');
 
     // red = loadImage('assets/Geo1.png');
@@ -50,14 +50,14 @@ function draw() {
 
 }
 
-function mousePressed() {
-  exportRiso();
-}
-
 // function mousePressed() {
-//     loop();
-//   }
+//   exportRiso();
+// }
+
+function mousePressed() {
+    loop();
+  }
   
-//   function mouseReleased() {
-//     noLoop();
-//   }
+  function mouseReleased() {
+    noLoop();
+  }
